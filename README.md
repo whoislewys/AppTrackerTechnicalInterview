@@ -13,10 +13,11 @@ During the interview, these are the particular skills that we will be looking ou
 - General React knowledge, in particular managing state and side effects.
 - Familiarity with React Native tooling, including Expo and Xcode/podman.
 - Familiarity with e2e tests, specifically detox.
+- Familiarity with expo build services.
 - Git skills including rebasing, merging, and resolving conflicts.
 - Documentation skills - we want to make sure that processes and systems created are clearly documented for other to use. We recognize that english may not be your first language, so we are not looking for correct grammar or vocabulary. We simply are looking for whether the steps are documented in a way that another developer can understand and re-create your work.
 
-This technical part of the interview will be 60-70 mins. You do not have to finish all of the assignment. It is more valuable for us to understand how you approach each step, then trying to rush and finish all the tasks. If there are certain things we do not get to, we will have time to discuss how you would approach those problem
+This technical part of the interview will be 60-70 mins. You do not have to finish all of the assignment. It is more valuable for us to understand how you approach each step, then trying to rush and finish all the tasks. If there are certain things we do not get to, we will have time to discuss how you would approach those problems.
 
 # The Task
 
@@ -26,9 +27,9 @@ More details about the task will be shared during the interview. There will be 4
 
 2. React State Management. Based on the module we use, we will present information on 2 seperate screens.
 
-3. E2e Test. Create e2e tests to simulate the task we do. These tests should be documented us JSDoc. These e2e test will use Jest and Detox (which are already set up for this project).
+3. E2e Tests. Create e2e tests to simulate the task we do. These tests should be documented using JSDoc. These e2e test will use Jest and Detox (which are already set up for this project).
 
-4. Run e2e tests on [Eas Build](https://docs.expo.dev/build-reference/e2e-tests/).
+4. Run e2e tests on [Eas Build](https://docs.expo.dev/build-reference/e2e-tests/). This will require access to the Digital Democracy Eas build services account, which we will provide during the interview.
 
 # Instructions
 
