@@ -1,0 +1,42 @@
+# App Tracker
+
+### Digital Democracy
+
+### Nov 2023 React Native Developer Technical Interview
+
+# Description
+
+The purpose of this interview is to assess your technical capabilities and skills. We would like to see how you code, your working style, and how you go about solving problems. We do not want you to do much coding ahead of time, as we would like you to discuss what you are doing while we all work on it together. Please do [set up your development environment ahead of time](https://reactnative.dev/docs/environment-setup?guide=native&platform=ios), and make sure your iPhone simulator is running.
+
+During the interview, these are the particular skills that we will be looking out for:
+
+- General React knowledge, in particular managing state and side effects.
+- Familiarity with React Native tooling, including Expo and Xcode/podman.
+- Familiarity with e2e tests, specifically detox.
+- Git skills including rebasing, merging, and resolving conflicts.
+- Documentation skills - we want to make sure that processes and systems created are clearly documented for other to use. We recognize that english may not be your first language, so we are not looking for correct grammar or vocabulary. We simply are looking for whether the steps are documented in a way that another developer can understand and re-create your work.
+
+This technical part of the interview will be 60-70 mins. You do not have to finish all of the assignment. It is more valuable for us to understand how you approach each step, then trying to rush and finish all the tasks. If there are certain things we do not get to, we will have time to discuss how you would approach those problem
+
+# The Task
+
+More details about the task will be shared during the interview. There will be 4 main aspects
+
+1. We will be setting up a native Expo-Module, and using that module to present some information to the user. This app is a [bare react native app](https://docs.expo.dev/bare/overview/) and therfore requires some configuration in order to use Expo Modules. Please do not do the configuration ahead of time, as we would like to see how you do this.
+
+2. React State Management. Based on the module we use, we will present information on 2 seperate screens.
+
+3. E2e Test. Create e2e tests to simulate the task we do. These tests should be documented us JSDoc. These e2e test will use Jest and Detox (which are already set up for this project).
+
+4. Run e2e tests on [Eas Build](https://docs.expo.dev/build-reference/e2e-tests/).
+
+# Instructions
+
+To be done before-hand:
+
+- [ ] Fork This Repo. Please make this forked repo private and share it with @achou11 and @ErikSin.
+- [ ] Set up the development environment of your local computer. Make sure the iPhone simulator is running.
+
+To be done during the interview:
+
+- This will be discussed during the interview.
