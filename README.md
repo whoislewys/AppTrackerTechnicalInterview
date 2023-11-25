@@ -36,7 +36,7 @@ More details about the task will be shared during the interview. There will be 4
 To be done before-hand:
 
 - [ ] Fork This Repo. Please make this forked repo private and share it with @achou11 and @ErikSin.
-- [ ] Set up the development environment of your local computer. Make sure the iPhone simulator is running.
+- [ ] Set up the development environment on your local computer. Make sure an iPhone simulator is running.
 
 To be done during the interview:
 
