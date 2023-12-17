@@ -2,7 +2,7 @@
 
 ### Digital Democracy
 
-### Nov 2023 React Native Developer Technical Interview
+### 2023 React Native Developer Technical Interview
 
 # Description
 
