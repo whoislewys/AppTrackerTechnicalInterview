@@ -41,3 +41,10 @@ To be done before-hand:
 To be done during the interview:
 
 - This will be discussed during the interview.
+
+## Run instructions
+To see latitude & longitude updates (on an iOS sim):
+1. Click on your simulator
+1. Go to the native Mac menu bar and select the "Features" tab
+1. Go to the "Location" menu item.
+1. Select any of the location simulation options (e.g. "Freeway Drive")

@@ -1,25 +1,48 @@
+import * as Location from 'expo-location';
 import * as React from 'react';
-import {StyleSheet} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Current} from './src/screens/Current';
-import {Previous} from './src/screens/Previous';
+import {StyleSheet, Text, View} from 'react-native';
+import {useCurrentLocation} from './src/useCurrentLocation';
 
 export type Screens = {
   Current: undefined;
   Previous: undefined;
 };
 
-const Stack = createNativeStackNavigator<Screens>();
+// const Stack = createNativeStackNavigator<Screens>();
 
 function App() {
+  const [locationPermissionError, setLocationPermissionError] =
+    React.useState('');
+  const {latitude, longitude} = useCurrentLocation();
+
+  React.useEffect(() => {
+    (async () => {
+      let {status} = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        setLocationPermissionError('Permission to access location was denied');
+        return;
+      }
+    })();
+  }, []);
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Current" component={Current} />
-        <Stack.Screen name="Previous" component={Previous} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={styles.sectionContainer}>
+      <Text testID="latitude">Latitude: {latitude}</Text>
+      <Text testID="longitude">Longitude: {longitude}</Text>
+
+      {/* TODO: display error text if user rejects permission */}
+      {locationPermissionError !== '' ? (
+        <Text style={styles.errorText}>
+          Error: Please allow Location permission to see your latitude &
+          longitude!
+        </Text>
+      ) : null}
+
+      {/* <Stack.Navigator> */}
+      {/*   <Stack.Screen name="Current" component={Current} /> */}
+      {/*   <Stack.Screen name="Previous" component={Previous} /> */}
+      {/* </Stack.Navigator> */}
+    </View>
   );
 }
 
@@ -39,6 +62,10 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  errorText: {
+    marginTop: 32,
+    color: 'red',
   },
 });
 
