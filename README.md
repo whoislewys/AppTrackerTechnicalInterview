@@ -40,7 +40,13 @@ To be done before-hand:
 
 To be done during the interview:
 
-- This will be discussed during the interview.
+- [ ] - [ ] Configure Expo to run on iOs, following [manual installation](https://docs.expo.dev/bare/installing-expo-modules/#manual-installation).
+- [ ] Install [Expo Location](https://docs.expo.dev/versions/latest/sdk/location/)
+- [ ] Create a hook that subscribes to the location of the user. 
+- [ ] Optimize the hook: Subscribing to the location can lead to many re-renders in react, as it is constanstly changing due to micro-movements and increasing accuracy. Optimize this hook so that it is debounced and only updates the location every 2 seconds OR update the location when the user has moved more than 15m. You can use [Cheap Ruler](https://www.npmjs.com/package/cheap-ruler) to measure the distance.
+- [ ] Print the `lat and lon` on the phone.
+- [ ] Write e2e test to reflect what you have just done.
+- [ ] Configure e2e tests to run on [Eas Build](https://docs.expo.dev/build-reference/e2e-tests/)
 
 ## Run instructions
 To see latitude & longitude updates (on an iOS sim):
