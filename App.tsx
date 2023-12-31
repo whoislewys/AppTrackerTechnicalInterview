@@ -1,6 +1,7 @@
 import * as Location from 'expo-location';
 import * as React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {LATITUDE, LONGITUDE} from './src/testIds';
 import {useCurrentLocation} from './src/useCurrentLocation';
 
 export type Screens = {
@@ -27,8 +28,8 @@ function App() {
 
   return (
     <View style={styles.sectionContainer}>
-      <Text testID="latitude">Latitude: {latitude}</Text>
-      <Text testID="longitude">Longitude: {longitude}</Text>
+      <Text testID={LATITUDE}>Latitude: {latitude ?? 'Loading...'}</Text>
+      <Text testID={LONGITUDE}>Longitude: {longitude ?? 'Loading...'}</Text>
 
       {/* TODO: display error text if user rejects permission */}
       {locationPermissionError !== '' ? (
