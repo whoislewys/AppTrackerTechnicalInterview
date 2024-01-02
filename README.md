@@ -54,3 +54,10 @@ To see latitude & longitude updates (on an iOS sim):
 1. Go to the native Mac menu bar and select the "Features" tab
 1. Go to the "Location" menu item.
 1. Select any of the location simulation options (e.g. "Freeway Drive")
+
+## Running Tests
+To run e2e tests on iOS run:
+```sh
+detox build --configuration ios.sim.debug
+detox test --configuration ios.sim.debug
+```
