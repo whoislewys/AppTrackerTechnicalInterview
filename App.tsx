@@ -9,8 +9,6 @@ export type Screens = {
   Previous: undefined;
 };
 
-// const Stack = createNativeStackNavigator<Screens>();
-
 function App() {
   const [locationPermissionError, setLocationPermissionError] =
     React.useState('');
@@ -38,11 +36,6 @@ function App() {
           longitude!
         </Text>
       ) : null}
-
-      {/* <Stack.Navigator> */}
-      {/*   <Stack.Screen name="Current" component={Current} /> */}
-      {/*   <Stack.Screen name="Previous" component={Previous} /> */}
-      {/* </Stack.Navigator> */}
     </View>
   );
 }
