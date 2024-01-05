@@ -7,12 +7,14 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "e2e:ios": "detox build --configuration ios.sim.debug && detox test --configuration ios.sim.debug"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "cheap-ruler": "^3.0.2",
+    "detox-cli": "^20.0.0",
     "expo": "^49.0.21",
     "expo-location": "~16.1.0",
     "react": "18.2.0",

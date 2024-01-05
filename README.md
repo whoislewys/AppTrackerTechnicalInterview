@@ -35,17 +35,17 @@ More details about the task will be shared during the interview. There will be 4
 
 To be done before-hand:
 
-- [ ] Fork This Repo. Please make this forked repo private and share it with @achou11 and @ErikSin.
-- [ ] Set up the development environment on your local computer. Make sure an iPhone simulator is running.
+- [x] Fork This Repo. Please make this forked repo private and share it with @achou11 and @ErikSin.
+- [x] Set up the development environment on your local computer. Make sure an iPhone simulator is running.
 
 To be done during the interview:
 
-- [ ] - [ ] Configure Expo to run on iOs, following [manual installation](https://docs.expo.dev/bare/installing-expo-modules/#manual-installation).
-- [ ] Install [Expo Location](https://docs.expo.dev/versions/latest/sdk/location/)
-- [ ] Create a hook that subscribes to the location of the user. 
-- [ ] Optimize the hook: Subscribing to the location can lead to many re-renders in react, as it is constanstly changing due to micro-movements and increasing accuracy. Optimize this hook so that it is debounced and only updates the location every 2 seconds OR update the location when the user has moved more than 15m. You can use [Cheap Ruler](https://www.npmjs.com/package/cheap-ruler) to measure the distance.
-- [ ] Print the `lat and lon` on the phone.
-- [ ] Write e2e test to reflect what you have just done.
+- [x] Configure Expo to run on iOs, following [manual installation](https://docs.expo.dev/bare/installing-expo-modules/#manual-installation).
+- [x] Install [Expo Location](https://docs.expo.dev/versions/latest/sdk/location/)
+- [x] Create a hook that subscribes to the location of the user. 
+- [x] Optimize the hook: Subscribing to the location can lead to many re-renders in react, as it is constanstly changing due to micro-movements and increasing accuracy. Optimize this hook so that it is debounced and only updates the location every 2 seconds OR update the location when the user has moved more than 15m. You can use [Cheap Ruler](https://www.npmjs.com/package/cheap-ruler) to measure the distance.
+- [x] Print the `lat and lon` on the phone.
+- [x] Write e2e test to reflect what you have just done.
 - [ ] Configure e2e tests to run on [Eas Build](https://docs.expo.dev/build-reference/e2e-tests/)
 
 ## Run instructions
@@ -57,6 +57,14 @@ To see latitude & longitude updates (on an iOS sim):
 
 ## Running Tests
 To run e2e tests on iOS run:
+
+Install dependencies
+```sh
+brew tap wix/brew;brew install applesimutils;
+npm install detox-cli --global
+```
+
+> Running "npm run e2e:ios" gave me out of memory error, but you can still run the tests with the globally installed detox package
 ```sh
 detox build --configuration ios.sim.debug
 detox test --configuration ios.sim.debug
